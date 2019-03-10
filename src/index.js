@@ -15,26 +15,30 @@ const App = () => {
                     avatar={faker.image.avatar()}
                 />
             </ApprovalCard>
-            <CommentDetail
-                author="Alex"
-                timeAgo="Today at 2:00AM"
-                content="I like the subject"
-                avatar={faker.image.avatar()}
-            />
-            <CommentDetail
-                author="Jane"
-                timeAgo="Yesterday at 5:00PM"
-                content="I like the writing"
-                avatar={faker.image.avatar()}
-            />
+            <ApprovalCard>
+                <CommentDetail
+                    author="Alex"
+                    timeAgo="Today at 2:00AM"
+                    content="I like the subject"
+                    avatar={faker.image.avatar()}
+                />
+            </ApprovalCard>
+            <ApprovalCard>
+                <CommentDetail
+                    author="Jane"
+                    timeAgo="Yesterday at 5:00PM"
+                    content="I like the writing"
+                    avatar={faker.image.avatar()}
+                />
+            </ApprovalCard>
         </div>
     );
 };
 
 ReactDOM.render(<App />, document.querySelector('#root'));
 
-            // http://semantic-ui.com
-            // semantic ui cdn
+                        // http://semantic-ui.com
+                        // semantic ui cdn
 
-            // faker js (Generate fake data)
+                        // faker js (Generate fake data)
 // npm install --save faker
