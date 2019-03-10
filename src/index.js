@@ -7,13 +7,14 @@ import ApprovalCard from './ApprovalCard';
 const App = () => {
     return (
         <div className="ui container comments">
-            <ApprovalCard />
-            <CommentDetail
-                author="Sam"
-                timeAgo="Today at 4:45PM"
-                content="Nice blog post"
-                avatar={faker.image.avatar()}
-            />
+            <ApprovalCard>
+                <CommentDetail
+                    author="Sam"
+                    timeAgo="Today at 4:45PM"
+                    content="Nice blog post"
+                    avatar={faker.image.avatar()}
+                />
+            </ApprovalCard>
             <CommentDetail
                 author="Alex"
                 timeAgo="Today at 2:00AM"
@@ -32,8 +33,8 @@ const App = () => {
 
 ReactDOM.render(<App />, document.querySelector('#root'));
 
-// http://semantic-ui.com
-// semantic ui cdn
+            // http://semantic-ui.com
+            // semantic ui cdn
 
-// faker js (Generate fake data)
+            // faker js (Generate fake data)
 // npm install --save faker
